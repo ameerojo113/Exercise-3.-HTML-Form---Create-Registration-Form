@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Registration Form</title>
+    <meta charset="UTF-8">
+</head>
+<style>
+    /* fieldset {
+        background-color: #f1f1f1;
+        border: none;
+        border-radius: 2px;
+        margin-bottom: 12px;
+        overflow: hidden;
+        padding: 0 .625em;
+    } */
+
+    label {
+        cursor: pointer;
+        display: inline-block;
+        padding: 3px 6px;
+        text-align: right;
+        width: 150px;
+        vertical-align: top;
+    }
+
+    input {
+        font-size: inherit;
+    }
+</style>
+
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <div>
+            <p>
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" />
+            </p>
+            <p>
+                <label for="middlename">Middle Name:</label>
+                <input type="text" name="middlename" />
+            </p>
+            <p>
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" />
+            </p>
+            <p>
+                <label for="Address">Address:</label>
+                <textarea name="Address" cols="50" rows="5" placeholder="Enter your address here.."></textarea>
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="Gender">Gender:</label>
+                <input type="radio" name="Gender" value="Male"> Male
+                <input type="radio" name="Gender" value="Female"> Female
+            </p>
+        </div>
+        <div>
+            <p>
+                <label for="Career">Career Path Field:</label>
+                <select name="dropdown">
+                    <option value="" disabled selected hidden>Choose One...</option>
+                    <option value="Front End Developer">Front End Developer</option>
+                    <option value="Back End Developer">Back End Developer</option>
+                    <option value="Full-Stack Developer">Full-Stack Developer</option>
+                </select>
+            </p>
+        </div>
+        <div>
+            <p>
+                <Label for="Technical">Technical Skills field:</Label>
+                <input type="checkbox" name="HTML" value="on"> HTML
+                <input type="checkbox" name="CSS" value="on"> CSS
+                <input type="checkbox" name="JavaScript" value="on"> JavaScript
+                <input type="checkbox" name="MySQL" value="on"> MySQL
+                <input type="checkbox" name="PHP" value="on"> PHP
+                <input type="checkbox" name="Laravel" value="on"> Laravel
+                <input type="checkbox" name="React JS" value="on"> React JS
+            </p>
+        </div>
+        <div>
+            <p>
+                <label></label>
+                <input type="submit" name="submit" value="Submit" />
+            </p>
+        </div>
+    </form>
+</body>
+
+</html>
